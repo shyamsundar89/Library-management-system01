@@ -1,0 +1,209 @@
+/* src/index.css */
+:root {
+  font-family: Inter, system-ui, Arial;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #f7f9fc;
+  color: #17223b;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 14px;
+  background: #2260b6;
+  color: #fff;
+}
+.nav .brand {
+  font-weight: 600;
+}
+.nav .links,
+.nav .auth {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.nav a {
+  color: #e5e7eb;
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+.nav a:hover {
+  background: #374151;
+}
+.nav button {
+  background: #ef4444;
+  border: none;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.nav button:hover {
+  background: #dc2626;
+}
+
+.page {
+  padding: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 14px 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+.row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 10px 14px;
+  align-items: center;
+}
+.grid > button {
+  grid-column: 1 / -1;
+  justify-self: start;
+}
+
+input,
+select,
+textarea,
+button {
+  padding: 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #fff;
+}
+input[readonly],
+textarea[readonly] {
+  background: #f3f4f6;
+}
+button {
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background: #1d4ed8;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th,
+.table td {
+  border: 1px solid #e5e7eb;
+  padding: 8px;
+  text-align: left;
+}
+.table thead {
+  background: #f3f4f6;
+}
+
+.muted {
+  color: #6b7280;
+  font-size: 13px;
+}
+.stat {
+  background: #eef2ff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #c7d2fe;
+}
+
+.input {
+  /* width: 100%; */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0; 
+  outline: none;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border-color: #007bff;
+}
+
+.mb-2 {
+  margin-bottom: 8px;
+}
+
+/* Main card */
+.logincard {
+  width: 350px;
+  margin: 80px auto;
+  padding: 30px 25px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Heading */
+.card h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Form layout */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+/* Labels */
+.form label {
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+}
+
+
+/* Submit button */
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 0; /* keep it rectangular */
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Muted text */
+.muted {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #777;
+}
